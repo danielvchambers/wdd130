@@ -1,11 +1,17 @@
 :root {
-    --primary-color: #13b958;
+    --primary-color: rgba(19, 185, 88, 0.5);
     --text-color: rgba(52, 70, 65, 0.7);
     --secondary-color: rgba(0, 99, 200, 0.7);
     --accent1-color: #5ee8d8;
     --accent2-color: #000452;
     --heading-font: fairplay display;
     --paragraph-font: titillium web;
+    --w: tan(atan2(var(--w_raw), 1px));
+    --h: tan(atan2(var(--h_raw), 1px));
+}
+
+#body {
+    max-width: 1600px;
 }
 
 .social {
@@ -49,13 +55,93 @@
     float: right;
 }
 
-.flex {
+.nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    padding: 35px;
+}
+
+.history {
+    background-color: var(--text-color);
+}
+
+.history h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+}
+
+#history-image {
+    display: inline;
+}
+
+.adventure-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+}
+
+.adventure-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.adventure-content figure {
+    padding: 5px;
+}
+
+.adventure h2 {
+    text-align: center;
+}
+
+#figure1 {
+    grid-column: 1/2;
+}
+
+#figure2 {
+    grid-column: 2/3;
+}
+
+#figure3 {
+    grid-column: 3/4;
+}
+
+#figure4 {
+    grid-column: 4/5;
+}
+
+#figure5 {
+    grid-column: 5/6;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#social-links {
+    justify-self: end;
+    grid-column: 3/4;
+}
+
+#copy {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/3;
 }

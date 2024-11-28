@@ -18,12 +18,16 @@
         />
         <link rel="stylesheet" href="styles/rafting.css" />
     </head>
-    <body>
+    <body id="body">
         <header class="grid">
-            <img src="images/rafinglogo.webp" alt="Company Logo" />
-            <nav class="flex">
-                <a href="index.html">Home</a>
-                <a href="about.html">About us</a>
+            <img
+                src="images/rafinglogo.webp"
+                alt="Company Logo"
+                id="nav-logo"
+            />
+            <nav class="nav">
+                <a href="index.html" id="home">Home</a>
+                <a href="about.html" id="about">About us</a>
                 <a href="trips.html">River Trips</a>
                 <a href="contact.html">Contact us</a>
             </nav>
@@ -56,29 +60,69 @@
                     </p>
                 </article>
             </div>
-            <section>
+            <section class="history">
                 <h2>History</h2>
-                <p>Use nonsense Language here</p>
+                <div class="history-content">
+                    <p>Use nonsense Language here</p>
+                    <img
+                        src="images/rafinglogo.webp"
+                        alt="Company Logo"
+                        id="history-image"
+                    />
+                    <p>More nonsense Language here</p>
+                </div>
             </section>
-            <section>
+            <section class="adventure">
                 <h2>Adventure Awaits You!</h2>
-                <img src="images/rafting1.webp" alt="Rafting at its finest" />
-                <img src="images/rafting2.webp" alt="Rafting at its finest" />
-                <img src="images/rafting3.webp" alt="Rafting at its finest" />
-                <img src="images/Rafting4.webp" alt="Rafting at its finest" />
-                <img src="images/rafting5.webp" alt="Rafting at its finest" />
+                <div class="adventure-content">
+                    <figure id="figure1">
+                        <img
+                            src="images/rafting1.webp"
+                            alt="Rafting at its finest"
+                        />
+                        <figcaption>El Diablo</figcaption>
+                    </figure>
+                    <figure id="figure2">
+                        <img
+                            src="images/rafting2.webp"
+                            alt="Rafting at its finest"
+                        />
+                        <figcaption>Mother in Law</figcaption>
+                    </figure>
+                    <figure id="figure3">
+                        <img
+                            src="images/rafting3.webp"
+                            alt="Rafting at its finest"
+                        />
+                        <figcaption>Peace on the river</figcaption>
+                    </figure>
+                    <figure id="figure4">
+                        <img
+                            src="images/Rafting4.webp"
+                            alt="Rafting at its finest"
+                        />
+                        <figcaption>Family Get together</figcaption>
+                    </figure>
+                    <figure id="figure5">
+                        <img
+                            src="images/rafting5.webp"
+                            alt="Rafting at its finest"
+                        />
+                        <figcaption>Oh no Rapid</figcaption>
+                    </figure>
+                </div>
             </section>
         </main>
-        <footer>
-            <p>&COPY; 2024 | River Raiders | Daniel Chambers</p>
-            <nav>
+        <footer class="footer">
+            <p id="copy">&COPY; 2024 | River Raiders | Daniel Chambers</p>
+            <nav id="social-links">
                 <a href="https://facebook.com" class="social">
                     <img src="images/facebook.webp" alt="facebook.com" />
                 </a>
                 <a href="https://twitter.com" class="social">
                     <img src="images/twitter.webp" alt="twitter.com" />
                 </a>
-                <a href="https://x.com/twitt_login?lang=en" class="social">
+                <a href="https://www.instagram.com/" class="social">
                     <img src="images/instagram.webp" alt="instagram.com" />
                 </a>
             </nav>
