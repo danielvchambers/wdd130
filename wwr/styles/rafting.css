@@ -208,7 +208,7 @@ button {
 
 .form-item {
     width: 800px;
-    border-color: solid var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .form h2 {
