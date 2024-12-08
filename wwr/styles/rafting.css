@@ -208,5 +208,9 @@ button {
 
 .form-item {
     width: 800px;
-    border-color: solid;
+    border-color: solid var(--primary-color);
+}
+
+.form h2 {
+    text-align: center;
 }
