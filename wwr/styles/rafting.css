@@ -134,6 +134,8 @@ nav a {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-top: 2px solid var(--secondary-color);
+    margin-top: 7px;
 }
 
 #social-links {
@@ -145,4 +147,66 @@ nav a {
     justify-self: center;
     align-self: center;
     grid-column: 2/3;
+}
+
+.employee h1 {
+    text-align: center;
+    color: white;
+    background-color: var(--text-color);
+}
+
+.employee-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.employee-content img {
+    width: 200px;
+    height: auto;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact article {
+    padding: 7px;
+}
+
+#map {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#message {
+    width: 793px;
+}
+
+label {
+    text-align: right;
+}
+
+button {
+    align-self: center;
+    margin: 3px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    border: none;
+    border-radius: 7px;
+    font-size: 30px;
+    width: 793px;
+}
+
+.form-item {
+    width: 800px;
+    border-color: solid;
 }
