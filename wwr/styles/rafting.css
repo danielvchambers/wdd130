@@ -269,7 +269,7 @@ th {
     text-align: center;
 }
 
-#table-headers {
+.table-headers {
     border: 1px solid var(--primary-color);
 }
 
