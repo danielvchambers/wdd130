@@ -50,10 +50,11 @@
     width: 100%;
 }
 
-.image {
+#image {
     margin: 20px;
     width: 200px;
     float: right;
+    max-height: 155px;
 }
 
 .nav {
@@ -133,7 +134,7 @@ nav a {
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     border-top: 2px solid var(--secondary-color);
     margin-top: 7px;
 }
@@ -181,12 +182,6 @@ nav a {
     justify-content: center;
 }
 
-form {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
 #message {
     width: 793px;
 }
@@ -196,21 +191,88 @@ label {
 }
 
 button {
-    align-self: center;
+    justify-self: center;
     margin: 3px;
     background-color: var(--accent2-color);
     color: var(--accent1-color);
     border: none;
     border-radius: 7px;
     font-size: 30px;
-    width: 793px;
 }
 
 .form-item {
-    width: 800px;
+    display: grid;
     border-color: var(--primary-color);
+    margin-bottom: 7px;
+}
+
+.news-letter {
+    padding: 10px;
+}
+
+.submit {
+    width: 100%;
 }
 
 .form h2 {
+    text-align: center;
+}
+.river-raid {
+    text-align: center;
+}
+
+.river-raid-head {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.home-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+.details h1 {
+    grid-column: 1/3;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.raid-table {
+    width: 100%;
+    text-align: center;
+    border: 3px solid var(--text-color);
+}
+
+td,
+th {
+    border: 1px solid var(--primary-color);
+    padding: 8px;
+}
+
+.table h2 {
+    text-align: center;
+}
+
+#table-headers {
+    border: 1px solid var(--primary-color);
+}
+
+.book {
     text-align: center;
 }
