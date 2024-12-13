@@ -50,7 +50,7 @@
     width: 100%;
 }
 
-#image {
+.image {
     margin: 20px;
     width: 200px;
     float: right;
